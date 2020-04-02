@@ -43,8 +43,8 @@ function module_define() {
   return v.define.apply(v, arguments);
 }
 
-function module_import() {
-  var v = new Variable(TYPE_NORMAL, this);
+function module_import(observer) {
+  var v = new Variable(TYPE_NORMAL, this, observer);
   return v.import.apply(v, arguments);
 }
 
